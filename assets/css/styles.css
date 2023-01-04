@@ -103,9 +103,9 @@ a {
     right: 2rem;
     top: 55%;
     transform: translateY(-50%);
-    height: 1.8rem;
-    opacity: .7;
+    font-size: 1.8rem;
     cursor: pointer;
+    opacity: 0.7;
 }
 
 #hide-password {

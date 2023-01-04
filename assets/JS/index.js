@@ -7,16 +7,16 @@ function showHidePassword() {
     if(password.type === 'password') {
         password.setAttribute('type', 'text')
         hidePassword.style.display = 'block'
+        eye.classList.remove('eye')
+        eye.classList.add('eye-slash')
         showPassword.style.display = 'none'
-        
     } else {
         password.setAttribute('type', 'password')
         eye.classList.remove('eye-slash')
         showPassword.style.display = 'block'
+        eye.classList.remove('eye-slash')
+        eye.classList.add('eye')
         hidePassword.style.display = 'none'
-
-
-
     }
 }
 
