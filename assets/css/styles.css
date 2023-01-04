@@ -1,0 +1,290 @@
+:root {
+    --primary-color: #8257e5;
+    --bg-color: #121214;
+    --secondary-bg: #202024;
+    --white-color: #e1e1e6;
+    --color-login: #7959c5;
+    --github-bg: #29292e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 5.5rem;
+    color: var(--white-color);
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+.container {
+    background: var(--bg-color);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    padding: 0 10rem;
+}
+/* Texto e logo */
+.text-info {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-info svg {
+    margin-bottom: 5rem;
+    
+}
+
+.text-info h1 {
+    max-width: 40rem;
+    line-height: 1.2;
+}
+
+/* área de login */
+
+.login {
+    background: var(--secondary-bg);
+    border-radius: 0.5rem;
+    display: flex;
+    width: 50rem;
+    height: 50rem;
+    justify-content: center;
+}
+.container-login {
+    width: 35rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: relative;
+}
+
+.type-mail-pass {
+    margin-bottom: 2rem;
+    height: 5.5rem;
+    border: none;
+    border-radius: 0.8rem;
+    background: var(--bg-color);
+    padding: 1rem;
+    color: var(--white-color);   
+    padding-left: 4rem;
+    width: 35rem;
+}
+
+.type-mail-pass:focus{
+    outline: 0.2rem var(--color-login) solid;   
+}
+
+.type-mail-pass::placeholder{
+    font-size: 1.5rem;
+}
+
+.mail-custom {
+    height: 5rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.mail-custom::after {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f0e0';
+    position: absolute;
+    color: var(--github-bg);
+    top: 54%;
+    transform: translateY(-50%);
+    left: 2%;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    z-index: 2;
+}
+
+.mail-custom:focus-within:after {
+    color: var(--color-login);
+    transition: all 150ms ease-in-out;
+}
+
+.pass-custom {
+    height: 5rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.pass-custom::after{
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    content: '\f023';
+    position: absolute;
+    color: var(--github-bg);
+    top: 54%;
+    transform: translateY(-50%);
+    left: 2%;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    z-index: 2;
+}
+
+.pass-custom:focus-within::after {
+    color: var(--color-login);
+    transition: all 150ms ease; 
+}
+
+.enter{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-login);
+    display: block;
+    margin-top: -1rem;
+}
+
+.enter:hover{
+    color: var(--primary-color);
+    transition: all 300ms ease-in-out;
+}
+.enter::first-letter{
+    text-transform: uppercase;
+}
+
+.login-btn {
+    height: 5.5rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 1rem;
+    color: var(--white-color);
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+.register-now{
+    display: grid;
+    flex-direction: row;
+    color: var(--white-color);
+    font-family: Roboto system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 1.5rem;
+}
+
+.register{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-login);
+    display: inline-block;   
+}
+
+.register-now p {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.register-now p::first-letter {
+    text-transform: uppercase;
+}
+
+.register:hover{
+    color: var(--primary-color);
+    transition: all 300ms ease-in-out;
+}
+.register::first-letter{
+    text-transform: uppercase;
+}
+
+.spacing{
+    position: relative;
+    height: 1rem;
+    margin: 2.4rem;
+    
+}
+.spacing::before {
+    left: 0;
+}
+
+.spacing::after {
+    right: 0;
+}
+
+.spacing::before, 
+.spacing::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 2rem);
+    height: 0.1rem;
+    background-color: var(--github-bg);
+}
+
+.github-login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--white-color);
+    align-items: center;
+    justify-items: center;
+}
+
+.github-login p {
+    font-size: 1.5rem;
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn-login {
+    background: var(--github-bg);
+    width: 22rem;
+    height: 5.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-login:hover{
+    background: var(--color-login);
+    transition: all 300ms ease-in-out;
+}
+
+.btn-login::after {
+    
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 900;
+    content: '\f09b';
+    position: absolute;
+    color: var(--color-login);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+    font-size: 2rem;
+    z-index: 2;
+}
+
+.btn-login:hover::after {
+    color: var(--white-color);
+    transition: all 300ms ease-in-out;
+}
