@@ -95,6 +95,7 @@ a {
     transform: translateY(-50%);
     font-size: 1.8rem;
     cursor: pointer;
+    display: flex;
 }
 
 .eye-slash{
