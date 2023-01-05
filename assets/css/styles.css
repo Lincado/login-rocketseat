@@ -318,3 +318,17 @@ a {
     transition: all 300ms ease-in-out;
 }
 
+@media (max-width: 80rem) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .text-info {
+        justify-self: start;
+        margin-bottom: 2rem;
+    }
+
+    .login {
+        justify-self: center;
+    }
+}
