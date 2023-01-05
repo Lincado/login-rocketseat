@@ -31,7 +31,7 @@ a {
 .container {
     background: var(--bg-color);
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -65,6 +65,8 @@ a {
     width: 50rem;
     height: 50rem;
     justify-content: center;
+    align-items: center;
+    padding: 6.4rem;
 }
 .container-login {
     width: 35rem;
@@ -77,21 +79,21 @@ a {
 
 .type-mail-pass {
     margin-bottom: 2rem;
-    height: 5.5rem;
+    height: 5rem;
+    width: 35rem;
     border: none;
     border-radius: 0.8rem;
     background: var(--bg-color);
     padding: 1rem;
     color: var(--white-color);   
     padding-left: 4rem;
-    width: 35rem;
 }
 
 .eye {
     color: var(--primary-color);
     position: absolute;
     right: 2rem;
-    top: 55%;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -102,7 +104,7 @@ a {
     color: var(--primary-color);
     position: absolute;
     right: 2rem;
-    top: 55%;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -123,6 +125,7 @@ a {
 
 .mail-custom {
     height: 5rem;
+    width: 35rem;
     position: relative;
     margin-bottom: 1.5rem;
 }
@@ -133,10 +136,10 @@ a {
     content: '\f0e0';
     position: absolute;
     color: var(--github-bg);
-    top: 54%;
+    top: 50%;
     transform: translateY(-50%);
     left: 2%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-left: 0.5rem;
     z-index: 2;
 }
@@ -148,8 +151,9 @@ a {
 
 .pass-custom {
     height: 5rem;
+    width: 35rem;
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .pass-custom::after{
@@ -158,10 +162,10 @@ a {
     content: '\f023';
     position: absolute;
     color: var(--github-bg);
-    top: 54%;
+    top: 50%;
     transform: translateY(-50%);
     left: 2%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-left: 0.5rem;
     z-index: 2;
 }
@@ -177,7 +181,6 @@ a {
     text-decoration: none;
     color: var(--color-login);
     display: block;
-    margin-top: -1rem;
 }
 
 .enter:hover{
@@ -189,15 +192,15 @@ a {
 }
 
 .login-btn {
-    height: 5.5rem;
-    font-size: 1.7rem;
+    height: 5rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: bold;
     background: var(--primary-color);
     border: none;
-    border-radius: 1rem;
+    border-radius: .5rem;
     color: var(--white-color);
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     cursor: pointer;
 }
 
@@ -314,3 +317,4 @@ a {
     color: var(--white-color);
     transition: all 300ms ease-in-out;
 }
+
