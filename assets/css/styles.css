@@ -306,8 +306,8 @@ h1 {
     color: var(--color-login);
     top: 50%;
     transform: translateY(-50%);
-    left: 22%;
-    padding-right: 1rem;
+    right: 60%;
+    padding-right: 2rem;
     font-size: 2rem;
     z-index: 2;
 }
