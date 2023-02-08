@@ -5,6 +5,7 @@
     --white-color: #e1e1e6;
     --color-login: #7959c5;
     --github-bg: #29292e;
+    --light-grey: #CCCCCC;
 }
 
 * {
@@ -33,7 +34,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-content: center;
-    padding: 0 10rem;
+    padding: 5rem 10rem;
 }
 /* Texto e logo */
 .text-info {
@@ -59,7 +60,9 @@ h1 {
     background: var(--secondary-bg);
     border-radius: 0.5rem;
     display: flex;
-    max-width: 49rem;
+    max-width: 48rem;
+    min-width: 43rem;
+    min-height: auto;
     height: 48rem;
     width: 100%;
     justify-content: center;
@@ -180,6 +183,7 @@ h1 {
     text-decoration: none;
     color: var(--color-login);
     display: block;
+    opacity: .8;
 }
 
 .enter:hover{
@@ -218,12 +222,14 @@ h1 {
     font-weight: bold;
     text-decoration: none;
     color: var(--color-login);
-    display: inline-block;   
+    display: inline-block; 
+    opacity: .8;  
 }
 
 .register-now p {
     font-size: 1.4rem;
     margin-top: 1rem;
+    color: var(--light-grey);
 }
 
 .register-now p::first-letter {
@@ -319,11 +325,12 @@ h1 {
 
 @media (max-width: 950px) {
     .container {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
+        padding: 4rem;
     }
 
     .text-info {
-        justify-self: center;
+        justify-self: left;
         margin-bottom: 2rem;
     }
 
