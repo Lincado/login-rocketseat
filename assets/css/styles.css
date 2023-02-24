@@ -69,6 +69,13 @@ h1 {
     align-items: center;
     padding: 4rem;
 }
+
+.eye,
+.eye-slash {
+    background: none;
+    border: none;
+}
+
 .container-login {
     max-width: 35rem;
     width: 100%;
